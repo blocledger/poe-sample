@@ -1,0 +1,35 @@
+<div ng-show='!loggedIn'>
+    <h3>Initial login</h3>
+    <a class="btn btn-primary btn-lg" ng-href="#!/login" uib-tooltip="Click to log in" tooltip-placement="right">
+        <span class="glyphicon glyphicon-ok"></span> Login</a>
+</div>
+
+<div ng-show='adminPriv && loggedIn'>
+    <h3>Chaincode configuration</h3>
+    <form class="form-inline" ng-submit="saveChaincode()">
+        <div class="form-group">
+            <label for="chaincodeName">Name</label>
+            <input type="text" class="form-control" id="chaincodeName" ng-model="chaincodeName" required>
+        </div>
+        <div class="form-group">
+            <label for="chaincodeVersion">Version</label>
+            <input type="text" class="form-control" id="chaincodeVersion" ng-model="chaincodeVersion" required>
+        </div>
+        <button class="btn btn-primary" uib-tooltip="Click to update chaincode" tooltip-placement="right">
+            <span class="glyphicon glyphicon-ok"></span> Update</button>
+    </form>
+</div>
+
+<transaction-alerts></transaction-alerts>
+
+<div ng-show='adminPriv && loggedIn'>
+    <h3>Add a user</h3>
+    <a class="btn btn-primary btn-lg" ng-href="#!/addUser" uib-tooltip="Click to add a user" tooltip-placement="right">
+        <span class="glyphicon glyphicon-ok"></span> Add User</a>
+</div>
+
+<div ng-show='adminPriv && loggedIn'>
+    <h3>Edit a user</h3>
+    <a class="btn btn-primary btn-lg" ng-href="#!/editUser" uib-tooltip="Click to edit a user" tooltip-placement="right">
+        <span class="glyphicon glyphicon-ok"></span> Edit User</a>
+</div>
