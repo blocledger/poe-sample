@@ -126,6 +126,11 @@ built and is functional on the service.
 If you are new to the service try using the
 [IBM Blockchain Platform Version 2 tutorial](https://cloud.ibm.com/docs/services/blockchain/howto?topic=blockchain-ibp-console-build-network) as a guide.
 
+> **Important:** Since the POE application uses the Service Discovery feature of Fabric, anchor
+peers must be defined for the channel.
+Review [Configuring anchor peers](https://cloud.ibm.com/docs/services/blockchain/howto?topic=blockchain-ibp-console-govern#ibp-console-govern-channels-anchor-peers)
+in the 'Governing components' document for detailed steps.
+
 ## Export the POE chaincode
 - Run IBP: Export package
 
