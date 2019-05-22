@@ -34,14 +34,14 @@ For example the requirements as of version 1.0.0 are:
 Additionally review the tutorial and documentation provided with IBM Blockchain Platform Extension.
 
 ## POE Installation
-- Clone the POE sample into directory of your choosing
+- Clone the POE sample into directory of your choosing   
 `git clone https://github.com/blocledger/poe-sample.git`
-- Change to the POE directory...
+- Change to the POE directory...   
 `cd poe-sample/`
-- Install the dependencies
-`npm install -g bower`
-`npm install`
-`bower install`
+- Install the dependencies   
+`npm install -g bower`   
+`npm install`  
+`bower install`  
 
 ## Package Chaincode
 The POE chaincode needs to be packaged before it can be installed on a blockchain.
@@ -73,11 +73,11 @@ The POE chaincode needs to be packaged before it can be installed on a blockchai
 
 ## Export the connection profile
 - Run IBP: Export Connection Profile
-- Copy the connection profile from local_fabric to config/network
+- From the terminal window, copy the connection profile from local_fabric to config/network  
   `cp local_fabric/connection.json config/network/`
 
 ## Start the POE app
-- In a terminal from the poe-sample directory enter the following command
+- In a terminal from the poe-sample directory enter the following command  
     `HFC_LOGGING='{"debug": "console"}' DEBUG=poe DISCOVER_MODE=asLocalhost node app.js`
 - Open your browser to  `http://localhost:3000`
 
@@ -110,11 +110,11 @@ The POE chaincode needs to be packaged before it can be installed on a blockchai
 
 ## Shutting down
 - Go to the terminal window that node was started in and enter a ctrl-c to exit
-- Run IBP: Teardown Fabric Runtime
-- Delete everything under poe-sample/config/network, poe-sample/config/wallet, and poe-sample/config/keyValStore
-`rm -r config/network/*`
-`rm -r config/wallet/*`
-`rm -r config/keyValStore/*`
+- Delete everything under poe-sample/config/network, poe-sample/config/wallet, and poe-sample/config/keyValStore  
+`rm -r config/network/*`  
+`rm -r config/wallet/*`  
+`rm -r config/keyValStore/*`  
+- Back on VS Code run IBP: Teardown Fabric Runtime
 
 
 # Running POE on the IBM Blockchain Platform Version 2
@@ -127,7 +127,7 @@ If you are new to the service try using the
 [IBM Blockchain Platform Version 2 tutorial](https://cloud.ibm.com/docs/services/blockchain/howto?topic=blockchain-ibp-console-build-network) as a guide.
 
 > **Important:** Since the POE application uses the Service Discovery feature of Fabric, anchor
-peers must be defined for the channel.
+peers must be defined for channels with more than one organizations.
 Review [Configuring anchor peers](https://cloud.ibm.com/docs/services/blockchain/howto?topic=blockchain-ibp-console-govern#ibp-console-govern-channels-anchor-peers)
 in the 'Governing components' document for detailed steps.
 
@@ -156,9 +156,9 @@ without changing any options
 - Copy and rename the file to 'poe-sample/config/network/connection.json'
 
 ## Start the POE app
-- In a terminal from the poe-sample directory enter the following command
+- In a terminal from the poe-sample directory enter the following command  
     `HFC_LOGGING='{"debug": "console"}' DEBUG=poe node app.js`
-- If a channel name other than 'mychannel' is used then CHANNEL_NAME needs to be set
+- If a channel name other than 'mychannel' is used then CHANNEL_NAME needs to be set  
     `HFC_LOGGING='{"debug": "console"}' DEBUG=poe CHANNEL_NAME=channel1 node app.js`
 
     > Note: This time do not include the DISCOVER_MODE environment variable
