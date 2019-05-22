@@ -1,6 +1,24 @@
-# Proof of Existence sample application
-Using this application the hash of a document can be stored on Hyperledger Fabric so that
-it may be verified at a later date.
+# Proof of Existence (POE) sample application
+BlocLedger’s POE sample application utility provides authentication and verification of electronic
+documents/files using Hyperledger Fabric blockchain. 
+
+The utility provides a proof of existence for any digital representation of electronic files. 
+Though simple in nature, the POE authentication utility is required for a multitude of common blockchain 
+use cases. Some examples are: proof of educational and professional credentials; authentication of 
+business or government contracts, agreements, licenses, titles, or registries; or track and trace of any 
+document centric process such as supply chain. 
+
+The POE sample application performs three basic functions: 
+1.	Register a User: establishes blockchain Certificate Authority credentials 
+2.	Add Document: Fabric chaincode stores a SHA-256 hash of the file on the ledger
+3.	Verify:  query of the ledger to authenticate the existence of an electronic document/file
+
+BlocLedger has developed a blockchain infrastructure API ideally suited for digital document centric 
+solutions. Leveraging blockchain and BlocLedger’s technology, many use cases will benefit from the 
+efficiency and immutable transparent trust of blockchain secured and managed document assets. 
+BlocLedger’s software API can be used by clients to develop and implement specific document centric 
+use cases or alternatively, the company can be contracted to develop custom solutions based on its API. 
+For more information about BlocLedger and its technology, please contact Al Brandt (al.brandt@blocledger.com). 
 
 # Running POE on a local Fabric using IBM Blockchain Platform Extension for VS Code
 
