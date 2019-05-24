@@ -25,11 +25,11 @@ For more information about BlocLedger and its technology, please contact Al Bran
 ## Requirements
 
 - VS Code version 1.32 or greater
-- IBM Blockchain Platform Extension for VS Code version 1.0.0 or greater
+- IBM Blockchain Platform Extension for VS Code version 1.0.1 or greater
 
 Review and follow the requirements in the details section from the IBM Blockchain Platform Extension.
 
-For example the requirements as of version 1.0.0 are:
+For example the requirements as of version 1.0.1 are:
 
 > ## Requirements
 >
@@ -90,9 +90,11 @@ The POE chaincode needs to be packaged before it can be installed on a blockchai
     - Select 'No' for the private data configuration file
 
 ## Export the connection profile
+- If present, delete any old connection profiles from the `poe-sample/config/network/` directory
 - Run IBP: Export Connection Profile
-- From the terminal window, copy the connection profile from local_fabric to config/network  
-  `cp local_fabric/connection.json config/network/`
+- Using the pop-up window navigate into the poe-sample/config/network directory and 
+rename the exported file to connection.json   
+  `poe-sample/config/network/connection.json`
 
 ## Start the POE app
 - In a terminal from the poe-sample directory enter the following command  
