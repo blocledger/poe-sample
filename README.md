@@ -136,7 +136,7 @@ rename the exported file to connection.json
 `rm -r config/keyValStore/*`  
 - Back on VS Code run IBP: Teardown Fabric Runtime from the VS Code command palette
 
-# Running POE on the IBM Blockchain Platform Version 2
+# Running POE on the IBM Blockchain Platform (SaaS) Version 2
 
 These instructions describe how to run POE on the IBM Blockchain Platform Version 2
 blockchain-as-a-service.
