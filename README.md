@@ -134,14 +134,13 @@ rename the exported file to connection.json
 `rm -r config/network/*`  
 `rm -r config/wallet/*`  
 `rm -r config/keyValStore/*`  
-- Back on VS Code run IBP: Teardown Fabric Runtime
-
+- Back on VS Code run IBP: Teardown Fabric Runtime from the VS Code command palette
 
 # Running POE on the IBM Blockchain Platform Version 2
 
 These instructions describe how to run POE on the IBM Blockchain Platform Version 2
 blockchain-as-a-service.
-It is assumed that Fabric network with at least one organization and one peer has been
+It is assumed that a Fabric network with at least one organization and one peer has been
 built and is functional on the service.
 If you are new to the service try using the
 [IBM Blockchain Platform Version 2 tutorial](https://cloud.ibm.com/docs/services/blockchain/howto?topic=blockchain-ibp-console-build-network) as a guide.
@@ -152,12 +151,12 @@ Review [Configuring anchor peers](https://cloud.ibm.com/docs/services/blockchain
 in the 'Governing components' document for detailed steps.
 
 ## Export the POE chaincode
-- Run IBP: Export package
+- From the VS Code command palette, choose Run IBP: Export package and Export the poe-100 package
 
 ## Install and Instantiate the POE chaincode
 - On the IBM Blockchain Platform Version 2 user interface go to the 'Smart contracts' page
 - Click the blue 'Install smart contract' button
-- In the menu on the right upload the package exported from VS Code in the previous step
+- From the panel on the right, upload the CDS package exported from VS Code in the previous step
 - Click the options icon at the end of the row for the new POE smart contract
 - Select 'Instantiate'
 - Follow the menu prompts.  Like before a function does not need to be specified
@@ -168,7 +167,7 @@ without changing any options
 
 ## Download the connection profile
 - Go to the Smart contracts section
-- Find the POE chaincode in the Instantiated smart contracts list
+- Scroll down and find the POE chaincode in the Instantiated smart contracts list
 - Click the options icon at the end of the POE chaincode row
 - Select 'Connect with SDK'
 - In the menu box on the right select the correct MSP and CA
